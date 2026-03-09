@@ -102,7 +102,7 @@ export type SiteContent = {
   };
 };
 
-const wechatPlaceholder = "/wechat-qr-placeholder.svg";
+const wechatQrPath = "/wechat-qr.jpg";
 
 export const siteContent: Record<Language, SiteContent> = {
   en: {
@@ -360,12 +360,11 @@ export const siteContent: Record<Language, SiteContent> = {
       }
     ],
     contact: {
-      wechatQrImage: wechatPlaceholder,
+      wechatQrImage: wechatQrPath,
       wechatLabel: "Add us on WeChat",
       scanInstructions:
         "Open WeChat, scan the code, and send your child's age plus the program you're interested in.",
-      caption: "Primary contact for class questions, camp availability, and trial lesson requests.",
-      secondaryNote: "Placeholder QR image. Replace with your real WeChat code before launch."
+      caption: "Primary contact for class questions, camp availability, and trial lesson requests."
     },
     footer: {
       tagline: "Creative growth for children through art, structure, and play.",
@@ -623,11 +622,10 @@ export const siteContent: Record<Language, SiteContent> = {
       }
     ],
     contact: {
-      wechatQrImage: wechatPlaceholder,
+      wechatQrImage: wechatQrPath,
       wechatLabel: "添加微信咨询",
       scanInstructions: "打开微信扫一扫，并发送孩子年龄与想咨询的课程类型。",
-      caption: "这是课程咨询、夏令营名额与试听课沟通的主要入口。",
-      secondaryNote: "当前为占位二维码，上线前请替换为真实微信码。"
+      caption: "这是课程咨询、夏令营名额与试听课沟通的主要入口。"
     },
     footer: {
       tagline: "通过艺术、结构与表达，让孩子持续成长。",

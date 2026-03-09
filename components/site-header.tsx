@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { LanguageSwitch } from "@/components/language-switch";
@@ -9,12 +10,17 @@ type SiteHeaderProps = {
 
 export function SiteHeader({ language }: SiteHeaderProps) {
   const content = getContent(language);
-  const brandMark = language === "en" ? "IS" : "一";
 
   return (
     <header className="site-header">
       <Link className="brand-lockup" href={localizeHref(language, "/")}>
-        <span className="brand-mark">{brandMark}</span>
+        <Image
+          src="/logo.jpg"
+          alt={content.brandName}
+          width={40}
+          height={40}
+          className="brand-logo"
+        />
         <span>
           <strong>{content.brandName}</strong>
           <small>Bothell, Washington</small>
