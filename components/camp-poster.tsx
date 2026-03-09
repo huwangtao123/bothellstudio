@@ -11,7 +11,7 @@ type CampPosterProps = {
 };
 
 const POSTER_BLUR =
-  "data:image/webp;base64,UklGRmoBAABXRUJQVlA4IF4BAABQBgCdASoQABYAPm0qkUWkIqGYBABABsS2AE6ZQjuRYC2APQr6Sj9pDPK8juzpURbl+QIvxzHN0UCXrAD+tgqN8BfgbwT6wHE/58yFB6rFpakk/UvTBNe/mDP9Zzjm5M0/dbP+QLXutIxJxorgkIfwGKqlyBoSt+N7dnwTS0UmqYBfgQK7f3EXt15WamkhMaUszCa8JE/zgNVxvz4vC+ss8uuzIvD9fkaPH6mLMcKeS/PCauPnZQY5SPiYK7xvqsLwY6fCYBB2HFoQ3nInyC/iwHZbna9kn/+kdcjDsxxn75jcUsUUa++nY7L/gNG+a3HcVKudWu9Yxfn/slHcsqUY3kRSVnAwn+ADT93BYVJy7ieFG/jfi++GJebg/Xz/S5/H/b/n/mA/hlvW454OyT1+wDZktCyf+fijV7qb/sZy3+AEfzqxyMKv6H2kAl3aZb/tv+DKf5NwBK/kbgAAAA==";
+  "data:image/webp;base64,UklGRmYBAABXRUJQVlA4IFoBAAAwBgCdASoQABYAPm0skkWkIqGYBABABsS2AE6ZQjuRYC2APQA6Sz9riNg8kYP//hws1Q1Wnzjr2FwAAP62CpAJBvCfiKnoOG6hgT116lspuNlPsGFjupZkwOfLyvbXu/C8/nP+QOI2+8L1bK5HEDjxgepHWcN/Hsg2oS+Jcs2xM6QFO47lgAQNee/qVvpkYWVCyfweOf2Z7D+14hnls5LClXp/bw/X5WBs+0LbrCZEv0tG8jayVpUYH4mCu8cFrC8ImoL6vu0ytXgh5yMleaYM3KZT8lZXlNs1yMOzBXX+Q3zyF5D889bvhoUk/vIK7Y+tyN1jhb2/VV93fCwg3sa2H+HOv/ABabvTFKOzrtb4rAlg/YwuaJbw5f0ufx/2/5/5gP4Zgutk9S6I6/YBcydk+n/X4o1e6m/5xQbP4G4fzqxyMMdPKO5M/70w3Rin/Qyn+TcRdv5FQAAA";
 
 function PosterImage({ priority }: { priority: boolean }) {
   return (
