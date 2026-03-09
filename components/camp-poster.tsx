@@ -10,16 +10,21 @@ type CampPosterProps = {
   showCaption?: boolean;
 };
 
+const POSTER_BLUR =
+  "data:image/webp;base64,UklGRmoBAABXRUJQVlA4IF4BAABQBgCdASoQABYAPm0qkUWkIqGYBABABsS2AE6ZQjuRYC2APQr6Sj9pDPK8juzpURbl+QIvxzHN0UCXrAD+tgqN8BfgbwT6wHE/58yFB6rFpakk/UvTBNe/mDP9Zzjm5M0/dbP+QLXutIxJxorgkIfwGKqlyBoSt+N7dnwTS0UmqYBfgQK7f3EXt15WamkhMaUszCa8JE/zgNVxvz4vC+ss8uuzIvD9fkaPH6mLMcKeS/PCauPnZQY5SPiYK7xvqsLwY6fCYBB2HFoQ3nInyC/iwHZbna9kn/+kdcjDsxxn75jcUsUUa++nY7L/gNG+a3HcVKudWu9Yxfn/slHcsqUY3kRSVnAwn+ADT93BYVJy7ieFG/jfi++GJebg/Xz/S5/H/b/n/mA/hlvW454OyT1+wDZktCyf+fijV7qb/sZy3+AEfzqxyMKv6H2kAl3aZb/tv+DKf5NwBK/kbgAAAA==";
+
 function PosterImage({ priority }: { priority: boolean }) {
   return (
     <div className="camp-poster-visual">
       <Image
-        src="/summer-camp-poster.png"
+        src="/summer-camp-poster.webp"
         alt="Summer camp recruitment poster"
         fill
         priority={priority}
         sizes="(max-width: 720px) 100vw, (max-width: 1200px) 46vw, 520px"
         className="camp-poster-image"
+        placeholder="blur"
+        blurDataURL={POSTER_BLUR}
       />
     </div>
   );
